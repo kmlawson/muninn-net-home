@@ -282,7 +282,7 @@ header.site-header nav {
         max-height: 800px;
         position: absolute;
         z-index: 2;
-        background: rgba(0,0,0,.55);
+        background: rgba(0,0,0,.20);
     }
     .overlay-lighter {
         background: rgba(0,0,0,.1);
@@ -547,6 +547,21 @@ header.site-header nav {
             @include transit(all,.2s,ease)
         }
     }
+}
+
+a.footnote {
+    vertical-align: super;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding: 0 2px;
+    line-height: 0;
+    position: relative;
+    top: -0.3em;
+}
+
+blockquote a.footnote {
+    font-style: normal; /* Override the italic style from blockquote */
+    margin-left: 3px; /* Add a slight left margin */
 }
 
 /* Footer Stuff */
