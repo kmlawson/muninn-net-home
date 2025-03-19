@@ -1,5 +1,6 @@
 /* ==========================================================================
    Media Queries
+
    - Mobile
    - Tablets
    ========================================================================== */
@@ -7,14 +8,14 @@
 /////////////////
 // Semantic.gs // for SCSS: http://sass-lang.com/
 /////////////////
-@use "sass:math";
-@use "../abstracts" as *;
+
 // Defaults which you can freely override
 $column-width: 7%;
 $gutter-width: 3%;
 $columns: 10;
 
 $total-width: 100%;
+
 
 // Utility function - you should never need to modify this
 @function gridsystem-width($columns:$columns) {
@@ -30,6 +31,7 @@ $total-width: gridsystem-width($columns);
 
 // The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
 
+
 //////////
 // GRID //
 //////////
@@ -41,26 +43,24 @@ body {
 
 @mixin row($columns:$columns) {
 	display: block;
-	width: $total-width*(math.div(($gutter-width + gridsystem-width($columns)), gridsystem-width($columns)));
-	margin: 0 $total-width*(math.div(($gutter-width*.5), gridsystem-width($columns))*-1);
-	// *width: $total-width*(math.div(($gutter-width + gridsystem-width($columns)), gridsystem-width($columns)))-$correction;
-	// *margin: 0 $total-width*(math.div(($gutter-width*.5), gridsystem-width($columns))*-1)-$correction;
+	width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns));
+	margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1);
+	// *width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns))-$correction;
+	// *margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1)-$correction;
 	@include clearfix;
 }
 
 @mixin column($x,$columns:$columns) {
 	display: inline;
 	float: left;
-	width: $total-width*(math.div((($gutter-width+$column-width)*$x)-$gutter-width, gridsystem-width($columns)));
-	margin: 0 $total-width*(math.div(($gutter-width*.5), gridsystem-width($columns)));
-	// *width: $total-width*(math.div((($gutter-width+$column-width)*$x)-$gutter-width, gridsystem-width($columns)))-$correction;
-	// *margin: 0 $total-width*(math.div(($gutter-width*.5), gridsystem-width($columns)))-$correction;
+	width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns));
+	margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+	// *width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns))-$correction;
+	// *margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns))-$correction;
 }
-
 @mixin push($offset:1) {
-	margin-left: $total-width*(math.div(($gutter-width+$column-width)*$offset, gridsystem-width($columns))) + $total-width*(math.div(($gutter-width*.5), gridsystem-width($columns)));
+	margin-left: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 }
-
 @mixin pull($offset:1) {
-	margin-right: $total-width*(math.div(($gutter-width+$column-width)*$offset, gridsystem-width($columns))) + $total-width*(math.div(($gutter-width*.5), gridsystem-width($columns)));
+	margin-right: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
 }

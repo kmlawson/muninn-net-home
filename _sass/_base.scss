@@ -1,8 +1,3 @@
-// Import abstracts and math module
-@use "../abstracts" as *;
-@use "sass:math";
-@use "sass:color";
-
 /**
  * Reset some basic elements
  */
@@ -12,6 +7,8 @@ dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
+
+
 
 /**
  * Basic styling
@@ -26,6 +23,8 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -33,8 +32,10 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: math.div($spacing-unit, 2);
+    margin-bottom: $spacing-unit / 2;
 }
+
+
 
 /**
  * Images
@@ -43,6 +44,8 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
+
+
 
 /**
  * Figures
@@ -54,6 +57,8 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
+
+
 
 /**
  * Lists
@@ -69,12 +74,16 @@ li {
     }
 }
 
+
+
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
+
+
 
 /**
  * Links
@@ -84,7 +93,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: color.adjust($brand-color, $lightness: -15%);
+        color: darken($brand-color, 15%);
     }
 
     &:hover {
@@ -93,13 +102,15 @@ a {
     }
 }
 
+
+
 /**
  * Blockquotes
  */
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
-    padding-left: math.div($spacing-unit, 2);
+    padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
@@ -108,6 +119,8 @@ blockquote {
         margin-bottom: 0;
     }
 }
+
+
 
 /**
  * Code formatting
@@ -135,12 +148,14 @@ pre {
     }
 }
 
+
+
 /**
  * Wrapper
  */
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -149,16 +164,19 @@ pre {
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width: calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: math.div($spacing-unit, 2);
-        padding-left: math.div($spacing-unit, 2);
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
     }
 }
+
+
 
 /**
  * Clearfix
  */
 %clearfix {
+
     &:after {
         content: "";
         display: table;
@@ -166,10 +184,13 @@ pre {
     }
 }
 
+
+
 /**
  * Icons
  */
 .icon {
+
     > svg {
         display: inline-block;
         width: 16px;

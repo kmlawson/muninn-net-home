@@ -6,13 +6,12 @@
    Imports
    ========================================================================== */
 
-// Import Sass utilities
-@use "sass:math";
-@use "sass:color";
-
-// Import abstracts (variables, mixins, etc.)
-@use "../_sass/abstracts" as *;
+@import "normalize";
+@import "mixins";
+@import "variables";
+@import "grid";
+@import "type";
+@import "styles";
 
 // Remove the definition below for a pixel-based layout
-// Note: This should actually be moved to _sass/abstracts/_variables.scss
 $total-width: 100%;

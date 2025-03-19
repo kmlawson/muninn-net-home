@@ -1,38 +1,34 @@
-@use "forwards" as f;
-@use "sass:math";
-@use "sass:color";
-
 /************ Basic *************/
 
 body {
-  font-family: f.$serif;
-  color: f.$black;
+  font-family: $serif;
+  color: $black;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -moz-osx-font-smoothing: grayscale; /* Fix for Mozilla */
   text-size-adjust: 100%;
-  background: f.$white;
+  background: $white;
   min-height: 100%;
   height: 100%;
   overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5 {
-    font-family: f.$serif;
+    font-family: $serif;
 }
 
 p {
-    margin-bottom: f.$lh;
+    margin-bottom: $lh;
 }
 
 a, a:visited, a:active {
-    color: f.$link;
-    @include f.transit(all,0.25s,ease-in-out);
+    color: $link;
+    @include transit(all,0.25s,ease-in-out);
 }
 
 a:hover {
-    color: f.$accent;
+    color: $accent;
     text-decoration: underline;
-    @include f.transit(all,.25s, ease-in-out)
+    @include transit(all,.25s, ease-in-out)
 }
 
 em {
@@ -45,47 +41,47 @@ strong {
 }
 
 small {
-    font-size: f.$fs5;
+    font-size: $fs5;
 }
 
 .hilite {
     display: inline-block;
     padding: 0 0.3em;
-    @include f.br(4px);
-    background: f.$hilite;
+    @include br(4px);
+    background: $hilite;
 }
 
 blockquote, blockquote p {
     font-style: italic;
-    line-height: 1.2em;
-    color: color.adjust(f.$black, $lightness: 0.2%);
-    margin-bottom: f.$lh;
+    line-height: 1.3em;
+    color: lighten($black, .2);
+    margin-bottom: $lh;
 }
 
 
 /*   Code Formatting    */
 
 code {
-    color: f.$accent;
+    color: $accent;
     font-family: "Monaco", "Courier New", "Courier";
     font-size: .75em;
     font-weight: bold;
 }
 
 .highlight {
-    background: f.$black;
+    background: $black;
     padding: 12px;
     border-radius: 4px;
-    margin-bottom: f.$lh;
+    margin-bottom: $lh;
     overflow-x: scroll;
 
     code {
-        color: f.$white;
+        color: $white;
         font-family: "Monaco", "Courier New", "Courier";
         font-size: .9em;
         .lineno {
-            margin-right: math.div(f.$lh, 2);
-            color: f.$grey-light;
+            margin-right: $lh/2;
+            color: $grey-light;
             line-height: 2em;
         }
         .nt {
@@ -107,9 +103,9 @@ hr {
     margin: 0 auto;
     width: 100%;
     height: 4px;
-    background: f.$grey-light;
+    background: $grey-light;
     border: none;
-    margin-bottom: f.$lh;
+    margin-bottom: $lh;
     border-radius: 2px;
 }
 
@@ -123,10 +119,10 @@ input {
     background: none;
     outline: none;
     width: 100%;
-    font-family: f.$serif;
+    font-family: $serif;
     &:focus {
         background: white;
-        color: f.$black;
+        color: $black;
     }
 }
 
@@ -139,11 +135,11 @@ input {
 }
 
 .bb {
-    border-bottom: 2px solid f.$link;
+    border-bottom: 2px solid $link;
 }
 
 .pad-top {
-    padding-top: f.$lh*2;
+    padding-top: $lh*2;
 }
 
 /************ Layout *************/
@@ -151,20 +147,20 @@ input {
 #bump {
     min-height: 100%;
     height: auto;
-    margin: 0 auto calc(-1 * f.$footerHeight);
+    margin: 0 auto -$footerHeight;
 }
 
 .wrap {
     max-width: 960px;
-    @include f.column(10);
+    @include column(10);
     float: none;
     margin: 0 auto;
-    @include f.clearfix;
+    @include clearfix;
     overflow: hidden;
 }
 
 .post {
-    @include f.column(8);
+    @include column(8);
     max-width: 680px;
     display: block;
     margin: 0 auto;
@@ -189,27 +185,27 @@ header.site-header {
 #bump .darken {
       
       a {
-      color: f.$black;
-      @include f.transit(all, .2s, ease-in-out);
+      color: $black;
+      @include transit(all, .2s, ease-in-out);
 
       &:hover {
-        color: f.$link;
-        @include f.transit(all, .2s, ease-in-out);
+        color: $link;
+        @include transit(all, .2s, ease-in-out);
         }
       }
       
       .menu .icons {
-          color: f.$black;
+          color: $black;
       }
       
       nav ul li a {
-            color: f.$black;
+            color: $black;
             &:active {
-              color: f.$link;  
+              color: $link;  
             }
             &:hover {
                 text-shadow: none;
-                color: f.$link;
+                color: $link;
             }
         }
 
@@ -221,7 +217,7 @@ header.site-header a.menu {
 }
 
 header.site-header hgroup h1, header.site-header nav ul {
-  font-family: f.$sans;
+  font-family: $sans;
 }
 header.site-header hgroup {
   float: left;
@@ -230,17 +226,17 @@ header.site-header hgroup {
       font-weight: 700;
       font-size: 18px;
       line-height: 100%;
-      color: f.$accent;
+      color: $accent;
       letter-spacing: 2px;
       text-transform: uppercase;
   }
   a {
       color: #fff;
-      @include f.transit(all, .2s, ease);
+      @include transit(all, .2s, ease);
 
       &:hover {
-        @include f.tshd(0, 0, 3px, rgba(255,255,255,.6));
-        @include f.transit(all, .2s, ease);
+        @include tshd(0, 0, 3px, rgba(255,255,255,.6));
+        @include transit(all, .2s, ease);
       }
   }
 }
@@ -249,7 +245,7 @@ header.site-header nav {
   float: right;
   display: block;
   padding-right: 5vw;
-  @include f.clearfix;
+  @include clearfix;
   
   ul li {
     font-size: 16px;
@@ -261,10 +257,10 @@ header.site-header nav {
     margin-left: 20px; 
     a {
         color: white;
-        @include f.transit(all, .2s, ease);
+        @include transit(all, .2s, ease);
         &:hover {
-            @include f.tshd(0, 0, 3px, rgba(255,255,255,.6));
-            @include f.transit(all, .2s, ease);
+            @include tshd(0, 0, 3px, rgba(255,255,255,.6));
+            @include transit(all, .2s, ease);
         }
     } 
   }
@@ -276,7 +272,7 @@ header.site-header nav {
    
 .article {
     position: relative;
-    margin-bottom: f.$lh;
+    margin-bottom: $lh;
     
     .overlay {
         vertical-align: middle;
@@ -286,7 +282,7 @@ header.site-header nav {
         max-height: 800px;
         position: absolute;
         z-index: 2;
-        background: rgba(0,0,0,.25);
+        background: rgba(0,0,0,.55);
     }
     .overlay-lighter {
         background: rgba(0,0,0,.1);
@@ -314,20 +310,20 @@ header.site-header nav {
     
     // Header Stuff
     header {
-        margin: (2*f.$lh) 0 f.$lh 0;
+        margin: (2*$lh) 0 $lh 0;
         hgroup {
-            color: f.$black;
+            color: $black;
             position: relative;
             text-align: center;
             width: 100%;
             margin-top: 0;
             .date {
-                font-family: f.$sans;
-                font-size: f.$fs5;
+                font-family: $sans;
+                font-size: $fs5;
                 font-weight: bold;
-                color: f.$grey-light;
+                color: $grey-light;
                 text-transform: uppercase;
-                margin-top: math.div(f.$lh * 2, 3);
+                margin-top: $lh * 2/3;
             }
         }
         
@@ -340,7 +336,7 @@ header.site-header nav {
 // Archive Page
 
 .archive {
-    @include f.column(10);
+    @include column(10);
     display: block;
     margin: 0 auto;
     float: none;
@@ -348,7 +344,7 @@ header.site-header nav {
 }
 
 .archive-wrap {
-    @include f.column(10);
+    @include column(10);
     max-width: 800px;
     display: block;
     margin: 0 auto;
@@ -359,45 +355,45 @@ header.site-header nav {
     .post-list {
         list-style-type: none;
         list-style: none;
-        @include f.column(7);
-        @include f.push(2);
+        @include column(7);
+        @include push(2);
         display: block;
         float: none;
         
         lh h2 {
-            margin-bottom: f.$lh*1.5;
+            margin-bottom: $lh*1.5;
         }
         
         li {
             display: block;
             float: none;
-            font-size: f.$fs3;
-            margin-bottom: f.$lh*2;
+            font-size: $fs3;
+            margin-bottom: $lh*2;
             position: relative;
             
             a {
                 position: relative;
                 &:hover {
-                    @include f.transit;
+                    @include transit;
                 }
             }
             
             a:hover:before {
                 content:'...';
-                color: f.$grey-light;
-                font-family: f.$sans;
+                color: $grey-light;
+                font-family: $sans;
                 position: absolute;
                 margin-left: -70px;
                 font-size: 40px;
                 left: 0;
                 top: -20px;
                 text-align: center;
-                @include f.transit;
+                @include transit;
             }
             
             a:before {
                 content:'\201c';
-                color: f.$grey-light;
+                color: $grey-light;
                 position: absolute;
                 margin-left: -70px;
                 font-size: 60px;
@@ -405,12 +401,12 @@ header.site-header nav {
                 top: -6px;
                 left: 0;
                 text-align: center;
-                @include f.transit;
+                @include transit;
 
             }
             
             h1 {
-                font-size: f.$fs3;
+                font-size: $fs3;
                 font-style: italic;
             }
         }
@@ -427,11 +423,11 @@ header.site-header nav {
         .date time {
             position: relative;
             top: -3px;
-            font-size: f.$fs5;
+            font-size: $fs5;
             font-weight: bold;
-            font-family: f.$sans;
+            font-family: $sans;
             font-style: normal;
-            color: f.$grey-light;
+            color: $grey-light;
             text-transform: uppercase;
             vertical-align: middle;
         }
@@ -449,12 +445,12 @@ header.site-header nav {
         top: 45px;
         z-index: 5;
         .date {
-            font-size: f.$fs5;
+            font-size: $fs5;
             position: relative;
             top: 10px;
             left: 6px;
-            color: f.$grey-medium;
-            margin-bottom: math.div(f.$lh, 2);
+            color: $grey-medium;
+            margin-bottom: $lh/2;
         }
     }
     
@@ -463,25 +459,25 @@ header.site-header nav {
     }
     
     h1, h2, h3, h4, h5 {
-        padding-top: (math.div(f.$lh, 2));
-        margin-bottom: (math.div(f.$lh, 2));
+        padding-top: ($lh * 1/2);
+        margin-bottom: ($lh * 1/2);
         line-height: 1.25em
 
     }
     
     figure {
-        margin: f.$lh 0;
+        margin: $lh 0;
         
         img {
-            margin-bottom: math.div(f.$lh, 2);
+            margin-bottom: $lh/2;
         }
         
         figcaption {
-            font-size: f.$fs5;
-            font-family: f.$sans;
+            font-size: $fs5;
+            font-family: $sans;
             font-weight: bold;
             text-transform: uppercase;
-            color: color.adjust(f.$black, $lightness: 50%);
+            color: lighten($black, 50%);
             text-align: center;
         }
     }
@@ -490,23 +486,23 @@ header.site-header nav {
         width: 100%;
         height: auto;
         display: block;
-        margin: f.$lh auto;
-        @include f.br(4px);
+        margin: $lh auto;
+        @include br(4px);
     }
     
     ul {
         display: block;
-        margin-bottom: f.$lh;
+        margin-bottom: $lh;
         list-style: disc;
         list-style-type: disc;
         lh h1, lh h2, lh h3, lh h4, lh h5 {
-            @include f.underline(2px, solid, f.$grey-light);
+            @include underline(2px, solid, $grey-light);
         }
         li {
             list-style: disc;
             list-style-type: disc;
-            margin-left: f.$lh*2;
-            padding-left: math.div(f.$lh, 3);
+            margin-left: $lh*2;
+            padding-left: $lh/3;
         &:last-child {
             margin-bottom: 0;
             }
@@ -515,16 +511,16 @@ header.site-header nav {
 
     ol {
         display: block;
-        margin-bottom: f.$lh;
+        margin-bottom: $lh;
         lh h1, lh h2, lh h3, lh h4, lh h5 {
-            @include f.underline(2px, solid, f.$grey-light);
+            @include underline(2px, solid, $grey-light);
         }
         li {
-            margin-left: f.$lh*2;
-            padding-left: math.div(f.$lh, 3);
-            margin-bottom: math.div(f.$lh, 3);
-            line-height: f.$lh;
-            font-size: f.$fsp;
+            margin-left: $lh*2;
+            padding-left: $lh/3;
+            margin-bottom: $lh/3;
+            line-height: $lh;
+            font-size: $fsp;
         &:last-child {
             margin-bottom: 0;
             }
@@ -533,124 +529,95 @@ header.site-header nav {
     
     .share {
         text-align: center;
-        display: none;
+        display: block;
         margin: 0 auto;
         width: 76px;
-        font-size: f.$fs5;
-        font-family: f.$sans;
+        font-size: $fs5;
+        font-family: $sans;
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 1px;
         padding: 4px 6px 4px 6px;
-        color: f.$grey-light;
-        border: 2px solid color.adjust(f.$grey-light, $alpha: -0.3);
-        @include f.br(4px);
+        color: $grey-light;
+        border: 2px solid transparentize($grey-light,.3);
+        @include br(4px);
         &:hover {
-            color: f.$link;
-            border-color: color.adjust(f.$link, $alpha: -0.3);
-            @include f.transit(all,.2s,ease)
+            color: $link;
+            border-color: transparentize($link,.3);
+            @include transit(all,.2s,ease)
         }
     }
 }
 
-/* Footnote Styling */
-
-/* Ensure footnote numbers appear as superscript */
-sup[id^="fnref"] {
-    font-size: 0.75em;
-    vertical-align: super;
-    font-style: normal;
-    margin-left: 0.1em;
-}
-
-/* Adjust footnote link appearance */
-a.footnote {
-    text-decoration: none;
-}
-
-/* Style footnote section */
-.footnotes {
-    font-size: 0.9em;
-    color: #666;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-}
-
-/* Style the backlink arrow */
-.reversefootnote {
-    font-size: 0.8em;
-    margin-left: 5px;
-}
-
 /* Footer Stuff */
 .push {
-    height: math.div(f.$footerHeight, 4) !important;
+    height: $footerHeight/4 !important;
 }
 
 footer {
     width: 100%;
-    background: f.$lightgrey;
-    height: f.$footerHeight;
-    font-size: f.$fsp;
-    color: f.$white;
+    background: $lightgrey;
+    height: $footerHeight;
+    font-size: $fsp;
+    color: $white;
     position: relative;
         
     // Contain that ish
     section {
-        @include f.column(10);
-        @include f.row(10);
+        @include column(10);
+        @include row(10);
         display: block;
         margin: 0 auto;
     }
     
     small {
-        font-size: (f.$fs6);
+        font-size: ($fs6);
         text-align: center;
         display: block;
         width: 100%;
         position: absolute;
         bottom: 8px;
-        font-family: f.$sans;
+        font-family: $sans;
         text-transform: uppercase;
-        color: color.adjust(f.$white, $alpha: -0.9);
+        color: transparentize($white, .9);
         a {
-            color: color.adjust(f.$white, $alpha: -0.7);
+            color: transparentize($white, .7);
         }
     }
     
     .list-title {
-        margin-bottom: math.div(f.$lh, 2);
-        border-bottom: 2px solid f.$link;
+        margin-bottom: $lh/2;
+        border-bottom: 2px solid $link;
         font-style: italic;
-        font-size: f.$fs4;
+        font-size: $fs4;
     }
     .prev-posts {
-        @include f.column(6,10);
+        @include column(6,10);
         max-width: 600px;
         min-height: 250px;
         padding-left: 5vw;
         p {
-            padding-top: f.$lh*2;
+            padding-top: $lh*2;
         }
         li {
-            @include f.row(12);
-            margin-top: math.div(f.$lh, 2);
+            @include row(12);
+            margin-top: $lh/2;
             .recent-title {
-                @include f.column(8,12);
+                @include column(8,12);
                 font-style: italic;
                 a {
                     &:hover {
-                        color: f.$white;
+                        color: $white;
                     }
                 }
             }
             span.date {
                 float: none;
-                color: color.adjust(f.$grey-light, $alpha: -0.4);
-                @include f.column(4,12);
+                color: transparentize($grey-light, .4);
+                @include column(4,12);
                 position: relative;
-                font-size: f.$fs5;
-                font-family: f.$sans;
+                font-size: $fs5;
+                font-family: $sans;
                 text-transform: uppercase;
                 text-align: right;
             }
@@ -660,17 +627,17 @@ footer {
     .social {
         position: absolute;
         top: 109px;
-        @include f.column(2,12);
+        @include column(2,12);
         right: 5vw;
         font-style: italic;
         a {
             &:hover {
-                color: f.$white;
+                color: $white;
             }
         }
         ul {
             li {
-                margin-bottom: math.div(f.$lh, 2);
+                margin-bottom: $lh/2;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -680,27 +647,27 @@ footer {
 }
 
 .disqus {
-    margin-top: f.$lh*3;
+    margin-top: $lh*3;
 }
 
 
 /* Tablet
    ========================================================================== */
 
-@media only screen and (max-width: f.$breakpoint-2-max-width) {
+@media only screen and (max-width: $breakpoint-2-max-width) {
     
 // Type Fixes
 
 h1 {
-    font-size: f.$fs2;
+    font-size: $fs2;
 }
 
 blockquote, blockquote p {
-    font-size: f.$fs3;
+    font-size: $fs3;
 }
 
 footer {
-    font-size: f.$fs5;
+    font-size: $fs5;
     
     .prev-posts {
         li  {
@@ -710,7 +677,7 @@ footer {
           }
           
           span.date {
-              font-size: f.$fs6;
+              font-size: $fs6;
           }  
         }
     }
@@ -739,13 +706,13 @@ footer {
     }
     
     .prev-posts {
-        @include f.column(9);
+        @include column(9);
         padding-left: 0;
         float: none;
         margin: 0 auto;
         display: block;
         li {
-            margin-top: math.div(f.$lh, 2);
+            margin-top: $lh/2;
         }
     }
     
@@ -771,7 +738,7 @@ footer {
   
   header.site-header hgroup h1 {
     margin-bottom: 0;
-    font-size: f.$fsp;
+    font-size: $fsp;
   }
   
   header.site-header hgroup {
@@ -821,7 +788,7 @@ footer {
     display: block;
     margin-left: 0;
     top: 0px;
-    font-size: f.$fs5;
+    font-size: $fs5;
   }
   
   header.site-header nav ul li a {
@@ -832,9 +799,9 @@ footer {
     padding-right: 7%;
     position: relative;
     width: 100%;
-    color: f.$white;
+    color: $white;
     &:active {
-      background-color: f.$link;
+      background-color: $link;
       color: white;  
     }
     &:hover {
@@ -845,28 +812,28 @@ footer {
   #bump .darken nav ul {
           padding: 0;
           margin-top: 40px;
-          background: f.$black;
+          background: $black;
       }
       
    #bump .darken nav ul li a {
-        color: f.$white;
+        color: $white;
         &:active {
-          background-color: f.$link;
+          background-color: $link;
         }
         &:hover {
             text-shadow: none;
-            color: f.$white;
-            background-color: f.$link;
+            color: $white;
+            background-color: $link;
         }
     }
 
 }
 
 
-@media only screen and (max-width: f.$breakpoint-1-max-width) {
+@media only screen and (max-width: $breakpoint-1-max-width) {
 
 .post {
-    @include f.column(9);
+    @include column(9);
     max-width: 420px;
     display: block;
     margin: 0 auto;
@@ -874,11 +841,15 @@ footer {
 }
 
 footer {
-    font-size: f.$fs5;
+    font-size: $fs5;
 }
 
 small {
-    font-size: f.$fs6;
+    font-size: $fs6;
 }
 
 }
+
+
+
+
