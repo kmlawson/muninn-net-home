@@ -1,0 +1,88 @@
+---
+layout: post
+title: Thomas Edison's Education Predictions
+description: Sources for Edison's predictions that motion pictures would replace textbooks.
+category: thoughts
+tags: [education, technology, history]
+image:
+  feature: edison.jpg
+---
+
+The inventor Thomas Edison (1847-1931) was convinced the motion picture would change education forever. The fact that videos, of one kind or another, do find a prominent place in many teaching contexts may suggest that his enthusiasm was warranted, but Edison didn't just talk about long term trends. In the last two decades of his life his claims about the coming impact of film on education have provided historians of education technology wonderful early twentieth century examples of edtech hype — exaggerated predictions around the potential for technology to change the education landscape. This post lists a few of his predictions and where they can be found in the sources.
+
+One version of Edison's education predictions can be found more frequently than any other, especially since Larry Cuban used the 1922 quote as a chapter epigraph in his classic 1986 *Teachers and Machines: The Classroom Use of Technology Since 1920*:
+
+> **"I believe that the motion picture is destined to revolutionize our educational system and that in a few years it will supplant largely, if not entirely, the use of textbooks. I should say that on the average we get about two percent efficiency out of schoolbooks as they are written today. The education of the future, as I see it, will be conducted through the medium of the motion picture...where it should be possible to obtain one hundred percent efficiency."**
+
+In most websites and newspaper editorials, this is provided without citation, but in journals and books Cuban's 1986 book is usually given as the citation. Even an article with a title that alludes to the "one hundred percent" cites Cuban, rather than contemporary sources.[^1] Cuban himself cites *Motion Pictures as an aid in Teaching American History* by Harry Author Wise (1939, p1), an interesting work reporting the results of an experiment using "PhotoPlay" films to teach history. The book opens with a collection of enthusiastic predictions about film in education, including Edison's. For example, in addition to Edison, another one of the boosters offered is the National Education Association:
+
+> "The motion picture multiplies the advantages of the ordinary picture a thousand-fold. It is the means of the greatest possibilities in the way of information. Its benefits are incalculable. It may be regarded as a great educational lever whereby a very great portion of our present day schoolroom work may be lifted out of the shadows of the valley of the abstract into the clear sunlight of human interest."[^2] 
+
+Edison's "one hundred percent efficiency" quote is understandably a juicy one to produce a chuckle before turning to similar claims for MOOCs, Khan Academy, etc. We are now all waiting to see how predictions around large language models and their impact on education will pan out in the coming years. In the form the oft-cited Edison quote can be found most often, however, it is not complete. Wise's book cites an article by Hugh Weir, "The Story of the Motion Picture" which is worth quoting at length, including a missing phrase or two (missing sections bolded below) and some surrounding context:
+
+> "What do you consider the greatest mission of the motion picture to-day?"  
+> "First, to make people happy — to bring more joy and cheer and wholesome good will into this world of ours. And God knows we need it.  
+> "Second – to educate, elevate, and inspire. I believe that the motion picture is destined to revolutionize our educational system, and that in a few years it will supplant largely, if not entirely, the use of text-books in our schools. **Books are clumsy methods of instruction at best, and often even the words of explanation in them have to be explained.**  
+> "I should say that on the average we get only about two per cent efficiency out of school books as they are written to-day. The education of the future, as I see it, will be conducted through the medium of the motion picture, **a visualized education**, where it should be possible to obtain a one hundred-per-cent efficiency.  
+> "The motion picture has tremendous possibilities for the training and development of the memory. There is no medium for memory-building as productive as the human eye.  
+> "That is another basic reason for the motion picture in the school. It will make a more alert and more capable generation of citizens and parents. You can't make a trained animal unless you start with a puppy. It is next to impossible to teach an old dog new tricks.   
+> "I do not believe that any other single agency of progress has the possibilities for a great and permanent good to humanity that I can see in the motion picture. And those possibilities are only beginning to be touched."[^3]
+
+This full version of the quote from a November, 1922 article is not the first mention, however. There is a somewhat shorter version of this quote found in the October, 1922 issue of *The Music Monitor* which skips from "text-books in our schools" directly to the slightly reworded "I doubt if any other single agency".[^4] 
+
+This is only one of many similar predictions that Edison has made around film and education. The best work I have seen on this is by Amanda R. Keeler, in her chapter in *Beyond the Screen: Institutions, Networks and Publics of Early Cinema* (2012).[^5] She has cited a number examples of Edison's predictions, often in the context of promoting his Home Kinetoscope. Below find a list a few of the quotations from her citations below together with a few extra:
+
+**Edison in July [1911](https://archive.org/details/moviwor09chal/page/104/mode/2up?q=%22interview+with+thomas%22):**
+
+> "I can teach more accurate geography in half an hour to a class of young pupils by moving pictures than a pedagogue can in a month." [...]  
+> "These moving pictures of actual life in the different nations will instruct the native American and bring with it a connective force which will also education and bring with it a connective force which will also educate the stranger within our gates in a manner which no platform eloquence nor spellbinding buncome can rival." [...]  
+> "The moving picture art will largely supplement the art of printing for the transmission and diffusion of knowledge. It will be used for teaching many of the elementary subjects. [...] Above all else, the fact must not be lost sight of that for educational purposes the moving picture possesses the tremendous advantage of not only giving a more correct and vivid idea of a subject than can possibly be obtained in books, but it places the knowledge before the child in an attractive and entertaining way. Instead of 'the whining schoolboy creeping like a snail unwillingly to school,' I shall not be surprised to see the school children of the future clustered on the steps waiting for the door to open."[^6]
+
+**Edison in November [1911](https://archive.org/details/sim_harpers-weekly_harpers-weekly_1911-11-04_55_2863/page/n7/mode/1up):**
+
+> "[...] [Edison] is going to make school so attractive that a big army with swords and guns couldn't keep boys and girls out of it. And, if that isn't a greater and more revolutionary invention than the electric light or the phonograph or moving pictures, then I never was a schoolboy."  
+> "I hear you have a new idea about education. What is it?" our president inquired.  
+> "I have," said Edison–"education by moving pictures. Teach the children everything, from mathematics to morality, by little dramas acted out before the camera, and reproduced in the school-room at very low cost. Sort o' swing the education in on them so attractively that they'll *want* to go to school. You'll have to lick 'em to keep 'em away."  [...]  
+> "We're just beginning on this new business, so it isn't in shape yet, though I've got the details pretty clearly mapped out in my midn. We'll have a studio as big as the Metropolitan Opera House, where thousands of educational dramas will be acted - except the historical things, which will be taken on the spot."  
+> [...] "We'll rent a set of pictures to a school for eight dollars a week. That's pretty cheap, isn't it? You couldn't hire much of a teacher for eight dollars a week, could you? And then think of the saving – you won't need any truant officer. No siree! Every little toddler in the district will just want to scoot to school!"[^7]
+
+**Edison in March [1912](https://babel.hathitrust.org/cgi/pt?id=chi.107100666&seq=363):**
+
+> "Children are, in many respects, only little animals, they receive most of their impressions through their eyes. The receipt of impressions through spoken words is an acquired power. [...] "But these are facts that we do not recognize when we send children to school. We treat them as if they were adults. We try to teach them as we try to teach adults – with books. We ignore the easy way to take the hard way. We make little or no appeal through the eyes, but make almost every appeal through the tedious process of memorizing. That the child does not understand what he is asked to memorize makes no difference — he must memorize. He must learn what is in his books."  
+> "Now, I hold that while schoolbooks are made for children, children were never made for schoolbooks. [...]"  
+> "Mr. Edison believes that motion pictures will do what books have never done – make schools universally interesting to children. [...]"  
+> "Before this article is printed, he will probably have sent men to China, India, and Australia, with instructions to overlook nothing that might reasonably be expected to inform or entertain children. [...]"  
+> "[...] I shall go over the whole field of knowledge that is suited to a child's comprehension. I have made a list of these subjects and there are about 4,000 of them. I am going to make films of them all. [...]"[^8]
+
+**Edison in November [1912](https://archive.org/details/sim_saturday-evening-post_1912-11-30_185_22/page/16/mode/2up):**
+
+> "'I indend to do away with books in the school – that is, I mean to try to do away with schoolbooks,' added Mr. Edison, purely as an afterthought." [...]  
+> "You see, we are planning an eight-year course. Yes – eight years of it, beginning in the very primary grades. [...]"  
+> "The trouble with so-called backward children is that their cross-fibers are atrophied. They haven't used them enough. It's a mechanical proposition. Stimulate them – get them to working – and they'll develop. [...] Well, get this law of association working in backward children and they'll soon stop being backward."  
+> "'I tell you it's going to make a lot of difference with the teacher too. It's going to take her out of that terrible, monotonous treadmill of work that she has been going through all these years, and give her something that will entertain her and stimulate her, instead of making life a drudgery for her. It will make a lot of difference!' Difference, indeed! Different schools, different teachers and, still more, different curriculua! How great an invasion was this to be, I wondered. [...]"  
+> "'You know I am very much interested in the moral growth of the child. Just think! If we give them, every day for eight years, lessons in morals by means of a stirring motion picture – lessons they can understand and they like – if we do this for eight years, through the whole course, no one can estimate the moral good of it! [...]'  
+> "To the objection, raised by many regarding the moving pictures, about the eyestrain, Mr. Edison said: 'There will be no eyestrain. The films are very steady–very steady. There isn't going to be any danger from them. Moreover, they are not inflammable.' [...]"  
+> "Well, this will certainly change education – will it not? 'Change education? It will revolutionize education!' concluded Mr. Edison."[^9]
+
+**Edison in July [1913](https://archive.org/details/per_new-york-dramatic-mirror_the-new-york-dramatic-mirror_1913-07-09_70_1803/page/24/mode/2up):**
+
+> "'Books,' declared the inventor with decision, 'will soon be obsolete in the public schools. Scholars will be instructed through the eyes. It is possible to teach every branch of human knowledge with the motion picture. Our school system will be completely changed inside of ten years.'"[^10]
+
+**Edison in February [1925](https://babel.hathitrust.org/cgi/pt?id=mdp.39015034367097&seq=358):**
+
+> "I figured that after the novelty wore off the camera would either be taken up by the big educators and pushed as a new agency in the schools or that it would be developed mostly along straight amusement lines for entertainment and commercial purposes. I guess up to date the entertainment and commercial purposes have won. [...]"  
+> "If, on the other hand, the educational uses of the camera had come more to the front, as I had hoped, and I had seen an opportunity to develop some new ideas along those lines, my story as a producer might have been very different. I should have been far more interested in going on. [...]"
+> "We might have developed them into a greater commercial circulation if we had kept on — but I was interested in the educational and not the entertainment field. When the educators failed to respond I lost interest.  What I had in mind was a bit ahead of the times, maybe. The world wasn't ready for the kind of education I had pictured." He paused again, and his voice became more crisp as he went on. "Maybe I'm wrong, but I should say that in ten years textbooks as the principal medium of teaching will be as obsolete as the horse and carriage are now. I believe that in the next ten years visual education - the imparting of exact information through the motion picture camera - will be a matter of course in all of our schools. The printed lesson will be largely supplemental - not paramount. [...]"[^11]
+
+[^1]: Kenneth P. King "The Motion Picture in Science Education: 'One Hundred Percent Efficiency'" *Journal of Science Education and Technology* 8:3 1999, pp211-226. Larry Cuban's epigraph is on p9 of *Teachers and Machines: The Classroom Use of Technology Since 1920* (1986).
+[^2]: Harry Author Wise, *Motion Pictures as an aid in Teaching American History* (1939), p2, citing Nathanial M. Graham "Motion Pictures as an Aid to Education," *National Education Association Journal of Proceedings and Addresses*, July 1914, pp746-7.
+[^3]: Hugh Weir "The Story of the Motion Picture" *McClure's* 54 Nov, 1922, p85. View on [Archive.org](https://archive.org/details/sim_new-mcclures-magazine_1922-11_54_9/page/80/mode/2up).
+[^4]: Pierre Marnaud "For the Home School Club Church: Visual Entertainment" *The Musical Monitor* v.12, October 1922, p60. View on [HathiTrust](https://babel.hathitrust.org/cgi/pt?id=uiug.30112089701681&seq=62). Roy Paul Madsen mentions part of the quote too and says it comes from 1910, but without any citation. Roy Paul Madsen *The Impact of Film* (1973), p441.
+[^5]: Amanda R. Keeler "John Collier, Thomas Edison and the Educational Promotion of Moving Pictures" in Marta Braun et al. ed. *Beyond the Screen: Institutions, Networks and Publics of Early Cinema* (2012), pp117-125. Open access accepted manuscript online: [Marquette University e-Publications](https://epublications.marquette.edu/comm_fac/124/?utm_source=epublications.marquette.edu%2Fcomm_fac%2F124&utm_medium=PDF&utm_campaign=PDFCoverPages). See the second half of that article for more on the example of John Collier. Edison's interest in educational films is also explored briefly in Edmund Morris *Edison* (2019), pp145-147. The earliest period of educational films is discussed in chapter two of Eileen Bowser *The Transformation of Cinema: 1905-1915*. See chapter 1 of Larry Cuban's *Teachers and Machines: The Classroom Use of Technology Since 1920* for the rise and fall of educational films. 
+[^6]: Frank Parker Hulette, “An Interview with Thomas A. Edison,” *Moving Picture World* (22 July 1911): 104-105. View on [Archive.org](https://archive.org/details/moviwor09chal/page/104/mode/2up?q=%22interview+with+thomas%22)
+[^7]: William Inglis, “Edison and the New Education,” *Harper’s Weekly* (4 November 1911): 8. View on [Archive.org](https://archive.org/details/sim_harpers-weekly_harpers-weekly_1911-11-04_55_2863/page/n7/mode/2up)
+[^8]: Allen L. Benson, “Edison’s Substitute for Schoolbooks,” *The World To-Day* (March 1912): 1925. View on [HathiTrust](https://babel.hathitrust.org/cgi/pt?id=chi.107100666&seq=363)
+[^9]: Mary Master Needham, “Going to School at the ‘Movies’: An Interview with Thomas A. Edison,” *Saturday Evening Post* (30 November 1912): 16. View on [Archive.org](https://archive.org/details/sim_saturday-evening-post_1912-11-30_185_22/page/16/mode/2up). 
+[^10]: Frederick James Smith "The Evolution of the Motion Picture VI – Looking into the Future with Thomas A. Edison" *The New York Dramatic Mirror* vol 70 (9 July, 1913), p24. View on [Archive.org](https://archive.org/details/per_new-york-dramatic-mirror_the-new-york-dramatic-mirror_1913-07-09_70_1803/page/24/mode/2up). Another 1913 article, reproducing 1912 quotes is Winthrop D. Lane, “Edison vs. Euclid: Has He Invented a Moving Stairway to Learning?” Survey (6 September 1913): 681-684. View on [Archive.org](https://archive.org/details/survey-1897_1913-09-06_30_23/page/680/mode/2up)
+[^11]: Hugh Weir "What Edison would like to do with the Movies" *Collier's* vol. 75 21 February, 1925, pp20-21. View on [HathiTrust](https://babel.hathitrust.org/cgi/pt?id=mdp.39015034367097&seq=358)
+

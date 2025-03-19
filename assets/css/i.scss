@@ -1,0 +1,18 @@
+---
+---
+@charset "UTF-8";
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+// Import Sass utilities
+@use "sass:math";
+@use "sass:color";
+
+// Import abstracts (variables, mixins, etc.)
+@use "../_sass/abstracts" as *;
+
+// Remove the definition below for a pixel-based layout
+// Note: This should actually be moved to _sass/abstracts/_variables.scss
+$total-width: 100%;
