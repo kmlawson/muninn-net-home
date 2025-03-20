@@ -1,6 +1,7 @@
 @use "variables" as *;
 @use "grid" as *;
 @use "mixins" as *;
+@use "sass:color";
 
 /************ Basic *************/
 
@@ -58,7 +59,8 @@ small {
 blockquote, blockquote p {
     font-style: italic;
     line-height: 1.3em;
-    color: lighten($black, .2);
+    // color: lighten($black, .2);
+    color: color.adjust($black, $lightness: 0.2%);
     margin-bottom: $lh;
 }
 
@@ -481,7 +483,8 @@ header.site-header nav {
             font-family: $sans;
             font-weight: bold;
             text-transform: uppercase;
-            color: lighten($black, 50%);
+            //color: lighten($black, 50%);
+            color: color.adjust($black, $lightness: 50%);
             text-align: center;
         }
     }
@@ -543,11 +546,13 @@ header.site-header nav {
         letter-spacing: 1px;
         padding: 4px 6px 4px 6px;
         color: $grey-light;
-        border: 2px solid transparentize($grey-light,.3);
+        //border: 2px solid transparentize($grey-light,.3);
+        border: 2px solid color.adjust($grey-light, $alpha: -0.3);
         @include br(4px);
         &:hover {
             color: $link;
-            border-color: transparentize($link,.3);
+            //border-color: transparentize($link,.3);
+            border-color: color.adjust($link, $alpha: -0.3);
             @include transit(all,.2s,ease)
         }
     }
@@ -598,9 +603,11 @@ footer {
         bottom: 8px;
         font-family: $sans;
         text-transform: uppercase;
-        color: transparentize($white, .9);
+        //color: transparentize($white, .9);
+        color: color.adjust($white, $alpha: -0.9);
         a {
-            color: transparentize($white, .7);
+            //color: transparentize($white, .7);
+            color: color.adjust($white, $alpha: -0.7);
         }
     }
     
@@ -632,7 +639,8 @@ footer {
             }
             span.date {
                 float: none;
-                color: transparentize($grey-light, .4);
+                //color: transparentize($grey-light, .4);
+                color: color.adjust($grey-light, $alpha: -0.4);
                 @include column(4,12);
                 position: relative;
                 font-size: $fs5;
