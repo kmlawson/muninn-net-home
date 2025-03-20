@@ -1,3 +1,21 @@
+@use "variables" as *;
+
+
+// Add this at the top of each file that uses the media-query mixin
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+%clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
 /**
  * Site header
  */

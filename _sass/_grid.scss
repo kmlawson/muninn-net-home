@@ -8,6 +8,8 @@
 /////////////////
 // Semantic.gs // for SCSS: http://sass-lang.com/
 /////////////////
+@use "mixins" as *;
+@use "variables" as *;
 
 // Defaults which you can freely override
 $column-width: 7%;

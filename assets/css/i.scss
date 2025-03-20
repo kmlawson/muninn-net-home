@@ -6,12 +6,20 @@
    Imports
    ========================================================================== */
 
-@import "normalize";
-@import "mixins";
-@import "variables";
-@import "grid";
-@import "type";
-@import "styles";
+
+@use "../../_sass/normalize";
+@use "../../_sass/mixins";
+@use "../../_sass/variables";
+@use "../../_sass/grid";
+@use "../../_sass/type";
+@use "../../_sass/styles";
+
+// @import "normalize";
+// @import "mixins";
+// @import "variables";
+// @import "grid";
+// @import "type";
+// @import "styles";
 
 // Remove the definition below for a pixel-based layout
 $total-width: 100%;
