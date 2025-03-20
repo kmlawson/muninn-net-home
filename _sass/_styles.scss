@@ -360,6 +360,7 @@ header.site-header nav {
     margin: 0 auto;
     float: none;
     padding-top: 140px;
+    padding-bottom: 300px;
     
     // Post Listing
     .post-list {
@@ -586,8 +587,9 @@ blockquote a.footnote {
 
 /* Footer Stuff */
 .push {
+    height: 300px;
     //height: $footerHeight/4 !important;
-    height: math.div($footerHeight, 4) !important;
+    //height: math.div($footerHeight, 4) !important;
 }
 
 footer {
