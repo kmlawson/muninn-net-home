@@ -2,6 +2,7 @@
 @use "grid" as *;
 @use "mixins" as *;
 @use "sass:color";
+@use "sass:math";
 
 /************ Basic *************/
 
@@ -86,7 +87,8 @@ code {
         font-family: "Monaco", "Courier New", "Courier";
         font-size: .9em;
         .lineno {
-            margin-right: $lh/2;
+            //margin-right: $lh/2;
+            margin-right: math.div($lh, 2);
             color: $grey-light;
             line-height: 2em;
         }
@@ -153,7 +155,8 @@ input {
 #bump {
     min-height: 100%;
     height: auto;
-    margin: 0 auto -$footerHeight;
+    //margin: 0 auto -$footerHeight;
+    margin: 0 auto (- $footerHeight);
 }
 
 .wrap {
@@ -329,7 +332,8 @@ header.site-header nav {
                 font-weight: bold;
                 color: $grey-light;
                 text-transform: uppercase;
-                margin-top: $lh * 2/3;
+                // margin-top: $lh * 2/3;
+                margin-top: math.div($lh * 2, 3);
             }
         }
         
@@ -456,7 +460,8 @@ header.site-header nav {
             top: 10px;
             left: 6px;
             color: $grey-medium;
-            margin-bottom: $lh/2;
+            //margin-bottom: $lh/2;
+            margin-bottom: math.div($lh, 2);
         }
     }
     
@@ -465,8 +470,10 @@ header.site-header nav {
     }
     
     h1, h2, h3, h4, h5 {
-        padding-top: ($lh * 1/2);
-        margin-bottom: ($lh * 1/2);
+        //padding-top: ($lh * 1/2);
+        //margin-bottom: ($lh * 1/2);
+        padding-top: math.div($lh * 1, 2);
+        margin-bottom: math.div($lh * 1, 2);
         line-height: 1.25em
 
     }
@@ -475,7 +482,8 @@ header.site-header nav {
         margin: $lh 0;
         
         img {
-            margin-bottom: $lh/2;
+            //margin-bottom: $lh/2;
+            margin-bottom: math.div($lh, 2);
         }
         
         figcaption {
@@ -509,7 +517,8 @@ header.site-header nav {
             list-style: disc;
             list-style-type: disc;
             margin-left: $lh*2;
-            padding-left: $lh/3;
+            //padding-left: $lh/3;
+            padding-left: math.div($lh, 3);
         &:last-child {
             margin-bottom: 0;
             }
@@ -524,8 +533,10 @@ header.site-header nav {
         }
         li {
             margin-left: $lh*2;
-            padding-left: $lh/3;
-            margin-bottom: $lh/3;
+            //padding-left: $lh/3;
+            padding-left: math.div($lh, 3);
+            //margin-bottom: $lh/3;
+            margin-bottom: math.div($lh, 3);
             line-height: $lh;
             font-size: $fsp;
         &:last-child {
@@ -575,7 +586,8 @@ blockquote a.footnote {
 
 /* Footer Stuff */
 .push {
-    height: $footerHeight/4 !important;
+    //height: $footerHeight/4 !important;
+    height: math.div($footerHeight, 4) !important;
 }
 
 footer {
@@ -612,7 +624,8 @@ footer {
     }
     
     .list-title {
-        margin-bottom: $lh/2;
+        //margin-bottom: $lh/2;
+        margin-bottom: math.div($lh, 2);
         border-bottom: 2px solid $link;
         font-style: italic;
         font-size: $fs4;
@@ -624,10 +637,12 @@ footer {
         padding-left: 5vw;
         p {
             padding-top: $lh*2;
+
         }
         li {
             @include row(12);
-            margin-top: $lh/2;
+            //margin-top: $lh/2;
+            margin-top: math.div($lh, 2);
             .recent-title {
                 @include column(8,12);
                 font-style: italic;
@@ -664,7 +679,8 @@ footer {
         }
         ul {
             li {
-                margin-bottom: $lh/2;
+                //margin-bottom: $lh/2;
+                margin-bottom: math.div($lh, 2);
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -739,7 +755,8 @@ footer {
         margin: 0 auto;
         display: block;
         li {
-            margin-top: $lh/2;
+            //margin-top: $lh/2;
+            margin-top: math.div($lh, 2);
         }
     }
     

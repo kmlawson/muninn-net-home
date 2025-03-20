@@ -5,6 +5,8 @@
    - Media Query adjustments
    ========================================================================== */
 @use "variables" as *;
+@use "sass:math";
+
 /* Meat
    ========================================================================== */
 
@@ -21,7 +23,8 @@ p {
 .post ul li {
     font-size: $fsp;
     line-height: $lh;
-    margin-bottom: $lh/3;
+    //margin-bottom: $lh/3;
+    margin-bottom: math.div($lh, 3);
 }
 
 
@@ -64,7 +67,8 @@ p {
 .post ul li {
     font-size: $fs5;
     line-height: $lhsmall;
-    margin-bottom: $lhsmall/2;
+    //margin-bottom: $lhsmall/2;
+    margin-bottom: math.div($lhsmall, 2);
 }
 
 h1,.h1 {      font-size: $fs2; }
